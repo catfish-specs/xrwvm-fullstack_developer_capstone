@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Cars Dealership</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        nav {
+            background-color: #212529;
+            padding: 16px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .brand {
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #ffc107;
+        }
+
+        .hero {
+            background: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .hero h1 {
+            margin-bottom: 12px;
+            font-size: 36px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 35px;
+            line-height: 1.7;
+        }
+
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .member {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+            padding-bottom: 24px;
+        }
+
+        .member img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .member h3 {
+            margin: 20px 10px 8px;
+            color: #212529;
+        }
+
+        .role {
+            color: #0d6efd;
+            font-weight: bold;
+            margin: 8px;
+        }
+
+        .member p {
+            padding: 0 18px;
+            line-height: 1.6;
+        }
+
+        .member a {
+            color: #0d6efd;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        footer {
+            background: #212529;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 45px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 29px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a class="brand" href="/">Cars Dealership</a>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/About.html" class="active">About Us</a>
+            <a href="/Contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>About Us</h1>
+        <p>Meet the team behind Cars Dealership</p>
+    </section>
+
+    <main class="container">
+
+        <section class="intro">
+            <h2>Who We Are</h2>
+            <p>
+                Cars Dealership is committed to helping customers find the right
+                vehicle through reliable dealership information, transparent
+                services, and customer reviews. Our team works to make the car
+                buying experience convenient, informative, and trustworthy.
+            </p>
+        </section>
+
+        <section class="team">
+
+            <article class="member">
+                <img
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80"
+                    alt="Business professional representing the project lead">
+                <h3>Alex Morgan</h3>
+                <p class="role">Project Manager</p>
+                <p>
+                    Coordinates project activities and ensures that the
+                    dealership application meets its objectives.
+                </p>
+                <p>
+                    Email:
+                    <a href="mailto:alex.morgan@example.com">
+                        alex.morgan@example.com
+                    </a>
+                </p>
+            </article>
+
+            <article class="member">
+                <img
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+                    alt="Business professional representing the frontend developer">
+                <h3>Sarah Williams</h3>
+                <p class="role">Frontend Developer</p>
+                <p>
+                    Develops responsive interfaces and improves the user
+                    experience across desktop and mobile devices.
+                </p>
+                <p>
+                    Email:
+                    <a href="mailto:sarah.williams@example.com">
+                        sarah.williams@example.com
+                    </a>
+                </p>
+            </article>
+
+            <article class="member">
+                <img
+                    src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+                    alt="Business professional representing the backend developer">
+                <h3>Daniel Carter</h3>
+                <p class="role">Backend Developer</p>
+                <p>
+                    Works on server-side functionality, APIs, and data
+                    management for dealership information and customer reviews.
+                </p>
+                <p>
+                    Email:
+                    <a href="mailto:daniel.carter@example.com">
+                        daniel.carter@example.com
+                    </a>
+                </p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cars Dealership. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
