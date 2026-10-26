@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Cars Dealership</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        nav {
+            background-color: #212529;
+            padding: 16px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .brand {
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #ffc107;
+        }
+
+        .hero {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .hero h1 {
+            margin: 0 0 12px;
+            font-size: 36px;
+        }
+
+        .hero p {
+            margin: 0;
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        .contact-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-card h2 {
+            color: #212529;
+            margin-top: 0;
+        }
+
+        .contact-item {
+            margin: 22px 0;
+            line-height: 1.7;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #0d6efd;
+            margin-bottom: 5px;
+        }
+
+        .contact-item a {
+            color: #0d6efd;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-image {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .note {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e7f1ff;
+            border-left: 5px solid #0d6efd;
+            border-radius: 5px;
+            line-height: 1.7;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 45px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 29px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="/" class="brand">Cars Dealership</a>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/About.html">About Us</a>
+            <a href="/Contact.html" class="active" aria-current="page">
+                Contact Us
+            </a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero">
+        <h1>Contact Us</h1>
+        <p>We're here to help you find the right dealership.</p>
+    </section>
+
+    <main class="container">
+
+        <section class="intro">
+            <h2>Get in Touch</h2>
+            <p>
+                Have questions about our dealerships, vehicle services, or
+                customer reviews? Contact our team using the details below.
+                We look forward to hearing from you.
+            </p>
+        </section>
+
+        <section class="contact-layout">
+
+            <!-- Contact Information -->
+            <div class="contact-card">
+                <img
+                    class="contact-image"
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80"
+                    alt="Modern business office building">
+
+                <h2>Contact Information</h2>
+
+                <div class="contact-item">
+                    <strong>Address</strong>
+                    Cars Dealership Customer Support<br>
+                    123 Main Street<br>
+                    Kansas City, Kansas, USA
+                </div>
+
+                <div class="contact-item">
+                    <strong>Phone</strong>
+                    <a href="tel:+19135550100">+1 (913) 555-0100</a>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <a href="mailto:support@example.com">
+                        support@example.com
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Business Hours</strong>
+                    Monday – Friday: 9:00 AM – 6:00 PM<br>
+                    Saturday: 10:00 AM – 4:00 PM<br>
+                    Sunday: Closed
+                </div>
+            </div>
+
+            <!-- Customer Support -->
+            <div class="contact-card">
+                <img
+                    class="contact-image"
+                    src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
+                    alt="Professionals working together in an office">
+
+                <h2>Customer Support</h2>
+
+                <p>
+                    Our support team can help you with dealership information,
+                    customer reviews, and questions about using our website.
+                </p>
+
+                <div class="contact-item">
+                    <strong>General Enquiries</strong>
+                    <a href="mailto:info@example.com">
+                        info@example.com
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Review Assistance</strong>
+                    <a href="mailto:reviews@example.com">
+                        reviews@example.com
+                    </a>
+                </div>
+
+                <p>
+                    Please include a brief description of your enquiry so our
+                    team can direct it to the appropriate department.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="note">
+            <strong>Need assistance?</strong>
+            <p>
+                You can also browse the dealership listings on our home page
+                and read customer reviews to learn more about individual dealers.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cars Dealership. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
